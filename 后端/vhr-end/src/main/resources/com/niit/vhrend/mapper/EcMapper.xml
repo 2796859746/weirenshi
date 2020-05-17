@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.niit.vhrend.mapper.EcMapper">
+  <resultMap id="BaseResultMap" type="com.niit.vhrend.model.Ec">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="workId" jdbcType="INTEGER" property="workId" />
+    <result column="sectorId" jdbcType="INTEGER" property="sectorId" />
+    <result column="sectorName" jdbcType="INTEGER" property="sectorName" />
+    <result column="thing" jdbcType="VARCHAR" property="thing" />
+    <result column="action" jdbcType="VARCHAR" property="action" />
+    <result column="warning" jdbcType="OTHER" property="warning" />
+    <result column="demerit" jdbcType="OTHER" property="demerit" />
+    <result column="bigDemerit" jdbcType="OTHER" property="bigDemerit" />
+    <result column="cite" jdbcType="OTHER" property="cite" />
+    <result column="merit" jdbcType="OTHER" property="merit" />
+    <result column="bigMerit" jdbcType="OTHER" property="bigMerit" />
+  </resultMap>
+  <resultMap id="AllEcInfo" type="com.niit.vhrend.model.Ec" extends="BaseResultMap">
+    <association property="sector" javaType="com.niit.vhrend.model.Sector">
+      <id column="sid" property="id"/>
+      <result column="sname" property="name"/>
+    </association>
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, `name`, workId, sectorId, sectorName, thing, `action`, warning, demerit, bigDemerit, 
+    cite, merit, bigMerit
+  </sql>
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from ec
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+<!--  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">-->
+<!--    delete from ec-->
+<!--    where id = #{id,jdbcType=INTEGER}-->
+<!--  </delete>-->
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.niit.vhrend.model.Ec" useGeneratedKeys="true">
+    insert into ec (`name`, workId, sectorId, 
+      sectorName, thing, `action`, 
+      warning, demerit, bigDemerit, 
+      cite, merit, bigMerit)
+    values (#{name,jdbcType=VARCHAR}, #{workId,jdbcType=INTEGER}, #{sectorId,jdbcType=INTEGER}, 
+      #{sectorName,jdbcType=INTEGER}, #{thing,jdbcType=VARCHAR}, #{action,jdbcType=VARCHAR},
+      #{warning,jdbcType=OTHER}, #{demerit,jdbcType=OTHER}, #{bigDemerit,jdbcType=OTHER}, 
+      #{cite,jdbcType=OTHER}, #{merit,jdbcType=OTHER}, #{bigMerit,jdbcType=OTHER})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.niit.vhrend.model.Ec" useGeneratedKeys="true">
+    insert into ec
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="workId != null">
+        workId,
+      </if>
+      <if test="sectorId != null">
+        sectorId,
+      </if>
+      <if test="sectorName != null">
+        sectorName,
+      </if>
+      <if test="thing != null">
+        thing,
+      </if>
+      <if test="action != null">
+        `action`,
+      </if>
+      <if test="warning != null">
+        warning,
+      </if>
+      <if test="demerit != null">
+        demerit,
+      </if>
+      <if test="bigDemerit != null">
+        bigDemerit,
+      </if>
+      <if test="cite != null">
+        cite,
+      </if>
+      <if test="merit != null">
+        merit,
+      </if>
+      <if test="bigMerit != null">
+        bigMerit,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="workId != null">
+        #{workId,jdbcType=INTEGER},
+      </if>
+      <if test="sectorId != null">
+        #{sectorId,jdbcType=INTEGER},
+      </if>
+      <if test="sectorName != null">
+        #{sectorName,jdbcType=INTEGER},
+      </if>
+      <if test="thing != null">
+        #{thing,jdbcType=VARCHAR},
+      </if>
+      <if test="action != null">
+        #{action,jdbcType=VARCHAR},
+      </if>
+      <if test="warning != null">
+        #{warning,jdbcType=OTHER},
+      </if>
+      <if test="demerit != null">
+        #{demerit,jdbcType=OTHER},
+      </if>
+      <if test="bigDemerit != null">
+        #{bigDemerit,jdbcType=OTHER},
+      </if>
+      <if test="cite != null">
+        #{cite,jdbcType=OTHER},
+      </if>
+      <if test="merit != null">
+        #{merit,jdbcType=OTHER},
+      </if>
+      <if test="bigMerit != null">
+        #{bigMerit,jdbcType=OTHER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.niit.vhrend.model.Ec">
+    update ec
+    <set>
+      <if test="name != null">
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="workId != null">
+        workId = #{workId,jdbcType=INTEGER},
+      </if>
+      <if test="sectorId != null">
+        sectorId = #{sectorId,jdbcType=INTEGER},
+      </if>
+      <if test="sectorName != null">
+        sectorName = #{sectorName,jdbcType=INTEGER},
+      </if>
+      <if test="thing != null">
+        thing = #{thing,jdbcType=VARCHAR},
+      </if>
+      <if test="action != null">
+        `action` = #{action,jdbcType=VARCHAR},
+      </if>
+      <if test="warning != null">
+        warning = #{warning,jdbcType=OTHER},
+      </if>
+      <if test="demerit != null">
+        demerit = #{demerit,jdbcType=OTHER},
+      </if>
+      <if test="bigDemerit != null">
+        bigDemerit = #{bigDemerit,jdbcType=OTHER},
+      </if>
+      <if test="cite != null">
+        cite = #{cite,jdbcType=OTHER},
+      </if>
+      <if test="merit != null">
+        merit = #{merit,jdbcType=OTHER},
+      </if>
+      <if test="bigMerit != null">
+        bigMerit = #{bigMerit,jdbcType=OTHER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <select id="getTotal" resultType="java.lang.Long">
+    select count(*) from ec e
+    <where>
+      <if test="ecs!=null">
+        <if test="ecs.name !=null and ecs.name!=''">
+          and e.name like concat('%',#{ecs.name},'%')
+        </if>
+        <if test="ecs.workId !=null">
+          and e.workId =#{ecs.workId}
+        </if>
+        <if test="ecs.sectorId !=null">
+          and e.sectorId =#{ecs.sectorId}
+        </if>
+        <if test="ecs.sectorName !=null">
+          and e.sectorName =#{ecs.sectorName}
+        </if>
+        <if test="ecs.thing !=null">
+          and e.thing =#{ecs.thing}
+        </if>
+        <if test="ecs.action !=null">
+          and e.action =#{ecs.action}
+        </if>
+      </if>
+    </where>
+  </select>
+
+  <select id="getEcByPage" resultMap="AllEcInfo">
+    select e.*,s.`name` as sname from ec e,sector s
+    where e.`sectorName`=s.`id`
+    <if test="ecs.name !=null and ecs.name!=''">
+      and e.name like concat('%',#{ecs.name},'%')
+    </if>
+    <if test="ecs.workId !=null">
+      and e.workId =#{ecs.workId}
+    </if>
+    <if test="ecs.sectorId !=null">
+      and e.sectorId =#{ecs.sectorId}
+    </if>
+    <if test="ecs.sectorName !=null">
+      and e.sectorName =#{ecs.sectorName}
+    </if>
+    <if test="ecs.thing !=null">
+      and e.thing =#{ecs.thing}
+    </if>
+    <if test="ecs.action !=null">
+      and e.action =#{ecs.action}
+    </if>
+    <if test="page !=null and size!=null">
+      limit #{page},#{size}
+    </if>
+  </select>
+
+  <select id="getAllEc" resultMap="BaseResultMap">
+    select * from ec;
+  </select>
+  <delete id="deleteEcById" parameterType="java.lang.Integer">
+    delete from ec
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="addEcs">
+    insert into ec (workId, name, sectorId,
+    sectorName, thing, action, warning,
+    demerit, bigDemerit, cite,
+    merit, bigMerit)
+    values
+    <foreach collection="list" separator="," item="ec">
+      (#{ec.workId,jdbcType=INTEGER}, #{ec.name,jdbcType=CHAR},
+      #{ec.sectorId,jdbcType=INTEGER}, #{ec.sectorName,jdbcType=INTEGER}, #{ec.thing,jdbcType=VARCHAR},
+      #{ec.action,jdbcType=VARCHAR},
+      #{ec.warning,jdbcType=VARCHAR}, #{ec.demerit,jdbcType=VARCHAR},#{ec.bigDemerit,jdbcType=VARCHAR},
+      #{ec.cite,jdbcType=VARCHAR},#{ec.merit,jdbcType=VARCHAR},#{ec.bigMerit,jdbcType=VARCHAR}
+      )
+    </foreach>
+  </insert>
+  <select id="maxWorkId" resultType="java.lang.Integer">
+    select max(workId) from ec
+  </select>
+  <update id="updateByPrimaryKey" parameterType="com.niit.vhrend.model.Ec">
+    update ec
+    set `name` = #{name,jdbcType=VARCHAR},
+      workId = #{workId,jdbcType=INTEGER},
+      sectorId = #{sectorId,jdbcType=INTEGER},
+      sectorName = #{sectorName,jdbcType=INTEGER},
+      thing = #{thing,jdbcType=VARCHAR},
+      `action` = #{action,jdbcType=VARCHAR},
+      warning = #{warning,jdbcType=OTHER},
+      demerit = #{demerit,jdbcType=OTHER},
+      bigDemerit = #{bigDemerit,jdbcType=OTHER},
+      cite = #{cite,jdbcType=OTHER},
+      merit = #{merit,jdbcType=OTHER},
+      bigMerit = #{bigMerit,jdbcType=OTHER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

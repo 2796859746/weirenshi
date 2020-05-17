@@ -1,0 +1,343 @@
+2020-05-13 08:49:07.740[main][main] INFO  com.niit.vhrend.VhrEndApplication - Starting VhrEndApplication on DESKTOP-914F8O2 with PID 17192 (E:\前后端\后端\vhr-end\target\classes started by Lenovo in E:\前后端\后端\vhr-end)
+2020-05-13 08:49:07.742[main][main] INFO  com.niit.vhrend.VhrEndApplication - No active profile set, falling back to default profiles: default
+2020-05-13 08:49:09.794[main][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-13 08:49:09.821[main][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 0 JPA repository interfaces.
+2020-05-13 08:49:09.921[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-13 08:49:10.484[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-05-13 08:49:10.498[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-13 08:49:10.499[main][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-13 08:49:10.499[main][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-13 08:49:10.501[main][main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-05-13 08:49:10.501[main][main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-13 08:49:10.502[main][main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-13 08:49:10.508[main][main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-05-13 08:49:10.670[main][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-13 08:49:10.670[main][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2840 ms
+2020-05-13 08:49:10.758[main][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-13 08:49:10.770[main][main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-05-13 08:49:11.041[main][main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-05-13 08:49:11.860[main][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-13 08:49:11.975[main][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-13 08:49:12.241[main][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-13 08:49:12.517[main][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-05-13 08:49:12.897[main][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-13 08:49:12.910[main][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-13 08:49:14.262[main][main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-13 08:49:14.394[main][main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-13 08:49:14.778[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+2020-05-13 08:49:14.778[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/*'], []
+2020-05-13 08:49:14.778[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+2020-05-13 08:49:14.778[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/**'], []
+2020-05-13 08:49:14.779[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/index.html'], []
+2020-05-13 08:49:14.779[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/verifyCode'], []
+2020-05-13 08:49:14.779[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Mvc [pattern='/login'], []
+2020-05-13 08:49:14.798[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@478cebdb, org.springframework.security.web.context.SecurityContextPersistenceFilter@25a2c4dc, org.springframework.security.web.header.HeaderWriterFilter@430f0c63, org.springframework.security.web.authentication.logout.LogoutFilter@14b4ce6f, com.niit.vhrend.config.LoginFilter@103bcc9f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18d396eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b66bf1c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5464aeec, org.springframework.security.web.session.SessionManagementFilter@15549dd7, org.springframework.security.web.access.ExceptionTranslationFilter@716eae1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14983265]
+2020-05-13 08:49:14.881[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-05-13 08:49:14.903[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-05-13 08:49:14.942[main][main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-05-13 08:49:15.109[main][main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getAllDepartmentsUsingGET_1
+2020-05-13 08:49:15.127[main][main] WARN  s.d.s.w.r.p.ParameterDataTypeReader - Trying to infer dataType java.util.Date[]
+2020-05-13 08:49:15.143[main][main] WARN  s.d.s.w.r.p.ParameterDataTypeReader - Trying to infer dataType java.lang.Integer[]
+2020-05-13 08:49:15.147[main][main] WARN  s.d.s.w.r.p.ParameterDataTypeReader - Trying to infer dataType java.lang.Integer[]
+2020-05-13 08:49:15.147[main][main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getAllJobLevelsUsingGET_1
+2020-05-13 08:49:15.157[main][main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getAllRolesUsingGET_1
+2020-05-13 08:49:15.159[main][main] WARN  s.d.s.w.r.p.ParameterDataTypeReader - Trying to infer dataType java.lang.Integer[]
+2020-05-13 08:49:15.163[main][main] WARN  s.d.s.w.r.p.ParameterDataTypeReader - Trying to infer dataType java.lang.Integer[]
+2020-05-13 08:49:15.164[main][main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getAllPositionsUsingGET_1
+2020-05-13 08:49:15.168[main][main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteEcByIdUsingDELETE_1
+2020-05-13 08:49:15.170[main][main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getAllSectorUsingGET_1
+2020-05-13 08:49:15.196[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-13 08:49:15.216[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-13 08:49:15.218[main][main] INFO  com.niit.vhrend.VhrEndApplication - Started VhrEndApplication in 8.305 seconds (JVM running for 10.181)
+2020-05-13 08:49:21.709[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-13 08:49:21.711[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-13 08:49:21.718[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-05-13 08:49:22.200[http-nio-8080-exec-1][http-nio-8080-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [378] milliseconds.
+2020-05-13 08:49:29.397[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.HrMapper.loadUserByUsername - ==>  Preparing: select * from hr where username=? 
+2020-05-13 08:49:29.509[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.HrMapper.loadUserByUsername - ==> Parameters: admin(String)
+2020-05-13 08:49:29.590[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.HrMapper.loadUserByUsername - <==      Total: 1
+2020-05-13 08:49:29.592[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.mapper.HrMapper.getHrRolesById - ==>  Preparing: select r.* from role r, hr_role hrr where hrr.rid=r.id and hrr.hrid=? 
+2020-05-13 08:49:29.593[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.mapper.HrMapper.getHrRolesById - ==> Parameters: 3(Integer)
+2020-05-13 08:49:29.607[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.mapper.HrMapper.getHrRolesById - <==      Total: 1
+2020-05-13 08:49:29.760[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 08:49:29.764[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 08:49:29.853[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 08:49:29.855[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*,m2.`id` as id2,m2.`component` as component2,m2.`enabled` as enabled2,m2.`iconCls` as iconCls2,m2.`keepAlive` as keepAlive2,m2.`name` as name2,m2.`parentId` as parentId2,m2.`requireAuth` as requireAuth2,m2.`path` as path2 from menu m1,menu m2,hr_role hrr,menu_role mr where m1.`id`=m2.`parentId` and hrr.`hrid`=? and hrr.`rid`=mr.`rid` and mr.`mid`=m2.`id` and m2.`enabled`=true order by m1.`id`,m2.`id` 
+2020-05-13 08:49:29.855[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-05-13 08:49:29.869[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-05-13 08:49:55.795[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 08:49:55.796[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 08:49:55.801[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 08:49:55.955[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 08:49:55.955[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 08:49:55.958[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 5
+2020-05-13 08:49:55.960[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 08:49:55.960[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 08:49:55.972[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 08:50:07.896[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 08:50:07.896[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 08:50:07.902[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 08:50:07.906[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` and e.name like concat('%',?,'%') limit ?,? 
+2020-05-13 08:50:07.906[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 孙千喜(String), 0(Integer), 10(Integer)
+2020-05-13 08:50:07.915[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 1
+2020-05-13 08:50:07.916[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e WHERE e.name like concat('%',?,'%') 
+2020-05-13 08:50:07.917[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 孙千喜(String)
+2020-05-13 08:50:07.918[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 08:50:10.289[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 08:50:10.289[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 08:50:10.295[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 08:50:10.298[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 08:50:10.299[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 08:50:10.301[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 5
+2020-05-13 08:50:10.303[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 08:50:10.303[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 08:50:10.303[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 08:50:48.447[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 08:50:48.448[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 08:50:48.452[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 08:50:48.577[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.EcMapper.insertSelective - ==>  Preparing: insert into ec ( `name`, workId, sectorId, sectorName, thing, `action`, warning, demerit, bigDemerit, cite, merit, bigMerit ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-05-13 08:50:48.579[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.EcMapper.insertSelective - ==> Parameters: 黄志伟(String), 10006(Integer), 201(Integer), 1(Integer), 迟到(String), 罚款100(String), 是(String), 否(String), 否(String), 否(String), 否(String), 否(String)
+2020-05-13 08:50:48.591[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.EcMapper.insertSelective - <==    Updates: 1
+2020-05-13 08:50:48.625[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.niit.vhrend.mapper.EcMapper.insert - ==>  Preparing: insert into ec (`name`, workId, sectorId, sectorName, thing, `action`, warning, demerit, bigDemerit, cite, merit, bigMerit) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-05-13 08:50:48.626[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.niit.vhrend.mapper.EcMapper.insert - ==> Parameters: 黄志伟(String), 10006(Integer), 201(Integer), 1(Integer), 迟到(String), 罚款100(String), 是(String), 否(String), 否(String), 否(String), 否(String), 否(String)
+2020-05-13 08:50:48.635[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.niit.vhrend.mapper.EcMapper.insert - <==    Updates: 1
+2020-05-13 08:50:48.700[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 08:50:48.700[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 08:50:48.711[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 08:50:48.719[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 08:50:48.719[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 08:50:48.735[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 7
+2020-05-13 08:50:48.736[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 08:50:48.737[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 08:50:48.738[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 09:08:02.129[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:08:02.130[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:08:02.139[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:08:02.144[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 09:08:02.145[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 09:08:02.146[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 7
+2020-05-13 09:08:02.148[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 09:08:02.148[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 09:08:02.150[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 09:09:08.054[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:09:08.055[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:09:08.064[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:09:08.068[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 09:09:08.069[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 09:09:08.074[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 7
+2020-05-13 09:09:08.075[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 09:09:08.075[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 09:09:08.081[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 09:09:12.671[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:09:12.671[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:09:12.675[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:09:12.677[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*,m2.`id` as id2,m2.`component` as component2,m2.`enabled` as enabled2,m2.`iconCls` as iconCls2,m2.`keepAlive` as keepAlive2,m2.`name` as name2,m2.`parentId` as parentId2,m2.`requireAuth` as requireAuth2,m2.`path` as path2 from menu m1,menu m2,hr_role hrr,menu_role mr where m1.`id`=m2.`parentId` and hrr.`hrid`=? and hrr.`rid`=mr.`rid` and mr.`mid`=m2.`id` and m2.`enabled`=true order by m1.`id`,m2.`id` 
+2020-05-13 09:09:12.677[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-05-13 09:09:12.684[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-05-13 09:09:12.766[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:09:12.766[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:09:12.772[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:09:12.773[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*,m2.`id` as id2,m2.`component` as component2,m2.`enabled` as enabled2,m2.`iconCls` as iconCls2,m2.`keepAlive` as keepAlive2,m2.`name` as name2,m2.`parentId` as parentId2,m2.`requireAuth` as requireAuth2,m2.`path` as path2 from menu m1,menu m2,hr_role hrr,menu_role mr where m1.`id`=m2.`parentId` and hrr.`hrid`=? and hrr.`rid`=mr.`rid` and mr.`mid`=m2.`id` and m2.`enabled`=true order by m1.`id`,m2.`id` 
+2020-05-13 09:09:12.774[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-05-13 09:09:12.777[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-05-13 09:09:13.053[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:09:13.054[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:09:13.057[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:09:13.059[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 09:09:13.059[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 09:09:13.060[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 7
+2020-05-13 09:09:13.061[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 09:09:13.061[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 09:09:13.064[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 09:10:24.514[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:10:24.514[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:10:24.520[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:10:24.521[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*,m2.`id` as id2,m2.`component` as component2,m2.`enabled` as enabled2,m2.`iconCls` as iconCls2,m2.`keepAlive` as keepAlive2,m2.`name` as name2,m2.`parentId` as parentId2,m2.`requireAuth` as requireAuth2,m2.`path` as path2 from menu m1,menu m2,hr_role hrr,menu_role mr where m1.`id`=m2.`parentId` and hrr.`hrid`=? and hrr.`rid`=mr.`rid` and mr.`mid`=m2.`id` and m2.`enabled`=true order by m1.`id`,m2.`id` 
+2020-05-13 09:10:24.521[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-05-13 09:10:24.528[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-05-13 09:10:24.581[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:10:24.582[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:10:24.587[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:10:24.588[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*,m2.`id` as id2,m2.`component` as component2,m2.`enabled` as enabled2,m2.`iconCls` as iconCls2,m2.`keepAlive` as keepAlive2,m2.`name` as name2,m2.`parentId` as parentId2,m2.`requireAuth` as requireAuth2,m2.`path` as path2 from menu m1,menu m2,hr_role hrr,menu_role mr where m1.`id`=m2.`parentId` and hrr.`hrid`=? and hrr.`rid`=mr.`rid` and mr.`mid`=m2.`id` and m2.`enabled`=true order by m1.`id`,m2.`id` 
+2020-05-13 09:10:24.589[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-05-13 09:10:24.595[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-05-13 09:10:24.876[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:10:24.876[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:10:24.880[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:10:24.881[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 09:10:24.882[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 09:10:24.883[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 7
+2020-05-13 09:10:24.885[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 09:10:24.886[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 09:10:24.887[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 09:10:32.422[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:10:32.423[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:10:32.428[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:10:32.430[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` and e.sectorId =? limit ?,? 
+2020-05-13 09:10:32.430[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 201(Integer), 0(Integer), 10(Integer)
+2020-05-13 09:10:32.431[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 4
+2020-05-13 09:10:32.431[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e WHERE e.sectorId =? 
+2020-05-13 09:10:32.432[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 201(Integer)
+2020-05-13 09:10:32.517[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 09:10:39.148[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:10:39.149[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:10:39.153[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:10:39.155[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` and e.sectorId =? limit ?,? 
+2020-05-13 09:10:39.155[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 203(Integer), 0(Integer), 10(Integer)
+2020-05-13 09:10:39.156[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 1
+2020-05-13 09:10:39.156[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e WHERE e.sectorId =? 
+2020-05-13 09:10:39.156[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 203(Integer)
+2020-05-13 09:10:39.157[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 09:10:43.866[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:10:43.867[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:10:43.870[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:10:43.872[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*,m2.`id` as id2,m2.`component` as component2,m2.`enabled` as enabled2,m2.`iconCls` as iconCls2,m2.`keepAlive` as keepAlive2,m2.`name` as name2,m2.`parentId` as parentId2,m2.`requireAuth` as requireAuth2,m2.`path` as path2 from menu m1,menu m2,hr_role hrr,menu_role mr where m1.`id`=m2.`parentId` and hrr.`hrid`=? and hrr.`rid`=mr.`rid` and mr.`mid`=m2.`id` and m2.`enabled`=true order by m1.`id`,m2.`id` 
+2020-05-13 09:10:43.872[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-05-13 09:10:43.875[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-05-13 09:10:43.985[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:10:43.986[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:10:43.990[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:10:43.991[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*,m2.`id` as id2,m2.`component` as component2,m2.`enabled` as enabled2,m2.`iconCls` as iconCls2,m2.`keepAlive` as keepAlive2,m2.`name` as name2,m2.`parentId` as parentId2,m2.`requireAuth` as requireAuth2,m2.`path` as path2 from menu m1,menu m2,hr_role hrr,menu_role mr where m1.`id`=m2.`parentId` and hrr.`hrid`=? and hrr.`rid`=mr.`rid` and mr.`mid`=m2.`id` and m2.`enabled`=true order by m1.`id`,m2.`id` 
+2020-05-13 09:10:43.991[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-05-13 09:10:43.996[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-05-13 09:10:44.253[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:10:44.253[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:10:44.256[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:10:44.257[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 09:10:44.258[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 09:10:44.259[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 7
+2020-05-13 09:10:44.259[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 09:10:44.259[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 09:10:44.261[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 09:14:28.711[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:14:28.712[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:14:28.719[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:14:28.721[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*,m2.`id` as id2,m2.`component` as component2,m2.`enabled` as enabled2,m2.`iconCls` as iconCls2,m2.`keepAlive` as keepAlive2,m2.`name` as name2,m2.`parentId` as parentId2,m2.`requireAuth` as requireAuth2,m2.`path` as path2 from menu m1,menu m2,hr_role hrr,menu_role mr where m1.`id`=m2.`parentId` and hrr.`hrid`=? and hrr.`rid`=mr.`rid` and mr.`mid`=m2.`id` and m2.`enabled`=true order by m1.`id`,m2.`id` 
+2020-05-13 09:14:28.721[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-05-13 09:14:28.724[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-05-13 09:14:28.790[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:14:28.790[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:14:28.795[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:14:28.796[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*,m2.`id` as id2,m2.`component` as component2,m2.`enabled` as enabled2,m2.`iconCls` as iconCls2,m2.`keepAlive` as keepAlive2,m2.`name` as name2,m2.`parentId` as parentId2,m2.`requireAuth` as requireAuth2,m2.`path` as path2 from menu m1,menu m2,hr_role hrr,menu_role mr where m1.`id`=m2.`parentId` and hrr.`hrid`=? and hrr.`rid`=mr.`rid` and mr.`mid`=m2.`id` and m2.`enabled`=true order by m1.`id`,m2.`id` 
+2020-05-13 09:14:28.796[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-05-13 09:14:28.798[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-05-13 09:14:29.069[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:14:29.069[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:14:29.072[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:14:29.074[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 09:14:29.074[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 09:14:29.075[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 7
+2020-05-13 09:14:29.076[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 09:14:29.076[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 09:14:29.077[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 09:16:46.792[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:16:46.793[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:16:46.797[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:16:46.800[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 09:16:46.800[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 09:16:46.803[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 7
+2020-05-13 09:16:46.806[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 09:16:46.806[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 09:16:46.808[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 09:16:53.531[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:16:53.531[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:16:53.534[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:16:53.535[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*,m2.`id` as id2,m2.`component` as component2,m2.`enabled` as enabled2,m2.`iconCls` as iconCls2,m2.`keepAlive` as keepAlive2,m2.`name` as name2,m2.`parentId` as parentId2,m2.`requireAuth` as requireAuth2,m2.`path` as path2 from menu m1,menu m2,hr_role hrr,menu_role mr where m1.`id`=m2.`parentId` and hrr.`hrid`=? and hrr.`rid`=mr.`rid` and mr.`mid`=m2.`id` and m2.`enabled`=true order by m1.`id`,m2.`id` 
+2020-05-13 09:16:53.535[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-05-13 09:16:53.539[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-05-13 09:16:53.616[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:16:53.616[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:16:53.618[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:16:53.620[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*,m2.`id` as id2,m2.`component` as component2,m2.`enabled` as enabled2,m2.`iconCls` as iconCls2,m2.`keepAlive` as keepAlive2,m2.`name` as name2,m2.`parentId` as parentId2,m2.`requireAuth` as requireAuth2,m2.`path` as path2 from menu m1,menu m2,hr_role hrr,menu_role mr where m1.`id`=m2.`parentId` and hrr.`hrid`=? and hrr.`rid`=mr.`rid` and mr.`mid`=m2.`id` and m2.`enabled`=true order by m1.`id`,m2.`id` 
+2020-05-13 09:16:53.620[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-05-13 09:16:53.625[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-05-13 09:16:54.011[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:16:54.011[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:16:54.014[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:16:54.016[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 09:16:54.016[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 09:16:54.017[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 7
+2020-05-13 09:16:54.017[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 09:16:54.017[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 09:16:54.018[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 09:17:09.276[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:17:09.277[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:17:09.284[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:17:09.286[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 09:17:09.286[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 09:17:09.288[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 7
+2020-05-13 09:17:09.289[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 09:17:09.289[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 09:17:09.290[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 09:17:16.718[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:17:16.718[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:17:16.722[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:17:16.737[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.E.getEmployeeByPage - ==>  Preparing: select e.*,p.`id` as pid,p.`name` as pname,n.`id` as nid,n.`name` as nname,d.`id` as did,d.`name` as dname,j.`id` as jid,j.`name` as jname,pos.`id` as posid,pos.`name` as posname from employee e,nation n,politicsstatus p,department d,joblevel j,position pos where e.`nationId`=n.`id` and e.`politicId`=p.`id` and e.`departmentId`=d.`id` and e.`jobLevelId`=j.`id` and e.`posId`=pos.`id` limit ?,? 
+2020-05-13 09:17:16.738[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.E.getEmployeeByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 09:17:16.956[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.E.getEmployeeByPage - <==      Total: 10
+2020-05-13 09:17:16.957[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.mapper.EmployeeMapper.getTotal - ==>  Preparing: select count(*) from employee e 
+2020-05-13 09:17:16.957[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.mapper.EmployeeMapper.getTotal - ==> Parameters: 
+2020-05-13 09:17:16.959[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.mapper.EmployeeMapper.getTotal - <==      Total: 1
+2020-05-13 09:17:17.021[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:17:17.022[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:17:17.025[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:17:17.026[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.P.getAllPositions - ==>  Preparing: select * from position; 
+2020-05-13 09:17:17.026[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.P.getAllPositions - ==> Parameters: 
+2020-05-13 09:17:17.028[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.P.getAllPositions - <==      Total: 6
+2020-05-13 09:17:35.880[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:17:35.880[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:17:35.883[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:17:35.885[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 09:17:35.885[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 09:17:35.887[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 7
+2020-05-13 09:17:35.889[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 09:17:35.889[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 09:17:35.893[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 09:19:43.824[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:19:43.824[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:19:43.829[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:19:45.303[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:19:45.304[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:19:45.310[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:26:13.549[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:26:13.549[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:26:13.559[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:26:13.567[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.TrainMapper.getTrainByPage - ==>  Preparing: select t.*,s.`name` as sname from train t,sector s where t.`sectorName`=s.`id` limit ?,? 
+2020-05-13 09:26:13.567[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.TrainMapper.getTrainByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 09:26:13.919[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.TrainMapper.getTrainByPage - <==      Total: 4
+2020-05-13 09:26:13.923[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.mapper.TrainMapper.getTotal - ==>  Preparing: select count(*) from train t 
+2020-05-13 09:26:13.924[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.mapper.TrainMapper.getTotal - ==> Parameters: 
+2020-05-13 09:26:13.926[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.mapper.TrainMapper.getTotal - <==      Total: 1
+2020-05-13 09:26:39.975[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:26:39.976[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:26:39.981[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:26:39.985[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 09:26:39.985[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 09:26:39.986[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 7
+2020-05-13 09:26:39.987[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 09:26:39.987[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 09:26:39.988[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 09:26:46.550[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:26:46.550[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:26:46.556[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:26:46.559[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.mapper.EcMapper.deleteEcById - ==>  Preparing: delete from ec where id = ? 
+2020-05-13 09:26:46.560[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.mapper.EcMapper.deleteEcById - ==> Parameters: 11(Integer)
+2020-05-13 09:26:46.576[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.mapper.EcMapper.deleteEcById - <==    Updates: 1
+2020-05-13 09:26:46.904[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:26:46.904[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:26:47.007[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:26:47.009[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 09:26:47.009[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 09:26:47.011[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 6
+2020-05-13 09:26:47.011[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 09:26:47.011[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 09:26:47.012[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1
+2020-05-13 09:53:13.434[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*,r.`id` as rid,r.`name` as rname,r.`nameZh` as rnameZh from menu m,menu_role mr,role r where m.`id`=mr.`mid` and mr.`rid`=r.`id` order by m.`id` 
+2020-05-13 09:53:13.435[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-05-13 09:53:13.441[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 76
+2020-05-13 09:53:13.446[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==>  Preparing: select e.*,s.`name` as sname from ec e,sector s where e.`sectorName`=s.`id` limit ?,? 
+2020-05-13 09:53:13.446[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.mapper.EcMapper.getEcByPage - ==> Parameters: 0(Integer), 10(Integer)
+2020-05-13 09:53:13.448[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.mapper.EcMapper.getEcByPage - <==      Total: 6
+2020-05-13 09:53:13.449[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==>  Preparing: select count(*) from ec e 
+2020-05-13 09:53:13.449[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - ==> Parameters: 
+2020-05-13 09:53:13.451[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.vhrend.mapper.EcMapper.getTotal - <==      Total: 1

@@ -1,0 +1,1404 @@
+2020-04-23 10:17:11.289[main][main] INFO  com.niit.vhrend.VhrEndApplication - Starting VhrEndApplication on DESKTOP-914F8O2 with PID 12072 (E:\前后端\后端\vhr-end\target\classes started by Lenovo in E:\前后端\后端\vhr-end)
+2020-04-23 10:17:11.291[main][main] INFO  com.niit.vhrend.VhrEndApplication - No active profile set, falling back to default profiles: default
+2020-04-23 10:17:12.431[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-23 10:17:12.771[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-04-23 10:17:12.782[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-23 10:17:12.783[main][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-23 10:17:12.783[main][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-23 10:17:12.784[main][main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-04-23 10:17:12.785[main][main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-23 10:17:12.785[main][main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-23 10:17:12.787[main][main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-04-23 10:17:12.870[main][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-23 10:17:12.870[main][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1538 ms
+2020-04-23 10:17:12.976[main][main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-23 10:17:13.233[main][main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-23 10:17:14.153[main][main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 10:17:15.060[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Mvc [pattern='/login'], []
+2020-04-23 10:17:15.085[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@261f359f, org.springframework.security.web.context.SecurityContextPersistenceFilter@6897a4a, org.springframework.security.web.header.HeaderWriterFilter@69ec93c2, org.springframework.security.web.authentication.logout.LogoutFilter@4d354a3e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2db86a7c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6bce313, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3af10d0b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b02a984, org.springframework.security.web.session.SessionManagementFilter@5287ba5f, org.springframework.security.web.access.ExceptionTranslationFilter@66f5b8fe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1cd2143b]
+2020-04-23 10:17:15.133[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-04-23 10:17:15.153[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-23 10:17:15.156[main][main] INFO  com.niit.vhrend.VhrEndApplication - Started VhrEndApplication in 4.154 seconds (JVM running for 6.436)
+2020-04-23 10:19:55.554[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 10:19:55.556[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-23 10:19:56.283[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 724 ms
+2020-04-23 10:20:04.571[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.HrMapper.loadUserByUsername - ==>  Preparing: select * from hr where username=? 
+2020-04-23 10:20:04.641[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.HrMapper.loadUserByUsername - ==> Parameters: admin(String)
+2020-04-23 10:20:04.884[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 10:20:04.884[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 10:20:05.233[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.HrMapper.loadUserByUsername - <==      Total: 1
+2020-04-23 10:20:05.250[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.mapper.HrMapper.getHrRolesById - ==>  Preparing: select r.* from role r, hr_role hrr where hrr.rid=r.id and hrr.hrid=? 
+2020-04-23 10:20:05.250[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.mapper.HrMapper.getHrRolesById - ==> Parameters: 3(Integer)
+2020-04-23 10:20:05.402[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.mapper.HrMapper.getHrRolesById - <==      Total: 1
+2020-04-23 10:20:05.734[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 10:20:07.478[http-nio-8080-exec-3][http-nio-8080-exec-3] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [399] milliseconds.
+2020-04-23 10:20:07.479[http-nio-8080-exec-1][http-nio-8080-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [414] milliseconds.
+2020-04-23 10:20:08.108[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 10:20:08.109[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 10:20:08.152[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 10:20:08.534[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 10:20:08.535[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 10:20:08.943[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 10:20:32.915[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 10:20:32.915[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 10:20:32.923[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 10:20:32.926[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.P.selectAllPosition - ==>  Preparing: select * from position 
+2020-04-23 10:20:32.926[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.P.selectAllPosition - ==> Parameters: 
+2020-04-23 10:20:33.066[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.P.selectAllPosition - <==      Total: 7
+2020-04-23 10:28:27.062[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 10:28:27.062[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 10:28:27.077[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 10:28:27.079[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.P.selectAllPosition - ==>  Preparing: select * from position 
+2020-04-23 10:28:27.079[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.P.selectAllPosition - ==> Parameters: 
+2020-04-23 10:28:27.082[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.P.selectAllPosition - <==      Total: 7
+2020-04-23 11:36:00.029[main][main] INFO  com.niit.vhrend.VhrEndApplication - Starting VhrEndApplication on DESKTOP-914F8O2 with PID 27012 (E:\前后端\后端\vhr-end\target\classes started by Lenovo in E:\前后端\后端\vhr-end)
+2020-04-23 11:36:00.034[main][main] INFO  com.niit.vhrend.VhrEndApplication - No active profile set, falling back to default profiles: default
+2020-04-23 11:36:02.189[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-23 11:36:02.945[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-04-23 11:36:02.955[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-23 11:36:02.955[main][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-23 11:36:02.955[main][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-23 11:36:02.955[main][main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-04-23 11:36:02.956[main][main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-23 11:36:02.956[main][main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-23 11:36:03.107[main][main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-04-23 11:36:03.263[main][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-23 11:36:03.264[main][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3087 ms
+2020-04-23 11:36:03.485[main][main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-23 11:36:03.731[main][main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-23 11:36:04.837[main][main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 11:36:05.115[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Mvc [pattern='/login'], []
+2020-04-23 11:36:05.140[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e76afeb, org.springframework.security.web.context.SecurityContextPersistenceFilter@411fa0ce, org.springframework.security.web.header.HeaderWriterFilter@46394f65, org.springframework.security.web.authentication.logout.LogoutFilter@240f350a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@53dd42d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78e68401, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b27b2d0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@447fa959, org.springframework.security.web.session.SessionManagementFilter@26be9a6, org.springframework.security.web.access.ExceptionTranslationFilter@2fd39436, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a11c0eb]
+2020-04-23 11:36:05.185[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-04-23 11:36:05.207[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-23 11:36:05.211[main][main] INFO  com.niit.vhrend.VhrEndApplication - Started VhrEndApplication in 5.714 seconds (JVM running for 10.977)
+2020-04-23 11:36:39.553[http-nio-8080-exec-3][http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 11:36:39.554[http-nio-8080-exec-3][http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-23 11:36:39.559[http-nio-8080-exec-3][http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-04-23 11:36:39.577[http-nio-8080-exec-3][http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.security.web.firewall.RequestRejectedException: The request was rejected because the URL contained a potentially malicious String "//"
+	at org.springframework.security.web.firewall.StrictHttpFirewall.rejectedBlacklistedUrls(StrictHttpFirewall.java:369)
+	at org.springframework.security.web.firewall.StrictHttpFirewall.getFirewalledRequest(StrictHttpFirewall.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:194)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-04-23 11:36:42.658[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 11:36:42.695[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 11:36:43.140[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 11:36:43.572[http-nio-8080-exec-3][http-nio-8080-exec-3] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [363] milliseconds.
+2020-04-23 11:36:54.267[http-nio-8080-exec-2][http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.security.web.firewall.RequestRejectedException: The request was rejected because the URL contained a potentially malicious String "//"
+	at org.springframework.security.web.firewall.StrictHttpFirewall.rejectedBlacklistedUrls(StrictHttpFirewall.java:369)
+	at org.springframework.security.web.firewall.StrictHttpFirewall.getFirewalledRequest(StrictHttpFirewall.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:194)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-04-23 11:36:54.278[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 11:36:54.279[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 11:36:54.295[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 11:37:09.455[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 11:37:09.456[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 11:37:09.469[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 11:37:15.797[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.HrMapper.loadUserByUsername - ==>  Preparing: select * from hr where username=? 
+2020-04-23 11:37:15.798[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.HrMapper.loadUserByUsername - ==> Parameters: admin(String)
+2020-04-23 11:37:15.990[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.HrMapper.loadUserByUsername - <==      Total: 1
+2020-04-23 11:37:15.991[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.mapper.HrMapper.getHrRolesById - ==>  Preparing: select r.* from role r, hr_role hrr where hrr.rid=r.id and hrr.hrid=? 
+2020-04-23 11:37:15.991[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.mapper.HrMapper.getHrRolesById - ==> Parameters: 3(Integer)
+2020-04-23 11:37:16.168[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.mapper.HrMapper.getHrRolesById - <==      Total: 1
+2020-04-23 11:37:30.674[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 11:37:30.675[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 11:37:30.680[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 11:37:30.858[http-nio-8080-exec-8][http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+2020-04-23 11:38:20.423[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 11:38:20.424[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 11:38:20.465[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 11:38:20.467[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.J.getAllJobLevels - ==>  Preparing: select * from joblevel; 
+2020-04-23 11:38:20.469[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.J.getAllJobLevels - ==> Parameters: 
+2020-04-23 11:38:20.704[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.J.getAllJobLevels - <==      Total: 8
+2020-04-23 13:53:08.576[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.HrMapper.loadUserByUsername - ==>  Preparing: select * from hr where username=? 
+2020-04-23 13:53:08.611[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.HrMapper.loadUserByUsername - ==> Parameters: admin(String)
+2020-04-23 13:53:08.951[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.HrMapper.loadUserByUsername - <==      Total: 1
+2020-04-23 13:53:08.970[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.mapper.HrMapper.getHrRolesById - ==>  Preparing: select r.* from role r, hr_role hrr where hrr.rid=r.id and hrr.hrid=? 
+2020-04-23 13:53:08.972[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.mapper.HrMapper.getHrRolesById - ==> Parameters: 3(Integer)
+2020-04-23 13:53:09.573[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.mapper.HrMapper.getHrRolesById - <==      Total: 1
+2020-04-23 13:53:09.574[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.HrMapper.loadUserByUsername - ==>  Preparing: select * from hr where username=? 
+2020-04-23 13:53:09.630[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.HrMapper.loadUserByUsername - ==> Parameters: admin(String)
+2020-04-23 13:53:09.631[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.HrMapper.loadUserByUsername - <==      Total: 1
+2020-04-23 13:53:09.632[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.mapper.HrMapper.getHrRolesById - ==>  Preparing: select r.* from role r, hr_role hrr where hrr.rid=r.id and hrr.hrid=? 
+2020-04-23 13:53:09.632[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.mapper.HrMapper.getHrRolesById - ==> Parameters: 3(Integer)
+2020-04-23 13:53:09.633[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.mapper.HrMapper.getHrRolesById - <==      Total: 1
+2020-04-23 13:53:14.458[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 13:53:14.458[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 13:53:15.428[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 13:53:15.430[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 13:53:15.451[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 13:53:15.574[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 13:53:20.378[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 13:53:20.378[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 13:53:20.429[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 13:53:20.507[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.P.selectAllPosition - ==>  Preparing: select * from position 
+2020-04-23 13:53:20.509[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.P.selectAllPosition - ==> Parameters: 
+2020-04-23 13:53:20.618[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.P.selectAllPosition - <==      Total: 7
+2020-04-23 14:07:58.164[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:07:58.205[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:07:58.555[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:07:58.556[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.J.getAllJobLevels - ==>  Preparing: select * from joblevel; 
+2020-04-23 14:07:58.556[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.J.getAllJobLevels - ==> Parameters: 
+2020-04-23 14:07:58.820[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.J.getAllJobLevels - <==      Total: 8
+2020-04-23 14:08:00.068[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:08:00.069[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:08:00.205[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:08:00.206[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:08:00.206[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:08:00.228[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:08:00.512[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:08:00.513[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:08:00.517[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:08:00.518[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:08:00.518[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:08:00.672[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:08:01.729[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:08:01.729[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:08:01.774[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:08:01.968[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:08:01.969[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:08:01.972[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.P.selectAllPosition - ==>  Preparing: select * from position 
+2020-04-23 14:08:01.973[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.P.selectAllPosition - ==> Parameters: 
+2020-04-23 14:08:01.974[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:08:01.975[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.J.getAllJobLevels - ==>  Preparing: select * from joblevel; 
+2020-04-23 14:08:01.975[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.J.getAllJobLevels - ==> Parameters: 
+2020-04-23 14:08:01.977[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.J.getAllJobLevels - <==      Total: 8
+2020-04-23 14:08:01.986[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.P.selectAllPosition - <==      Total: 7
+2020-04-23 14:08:24.378[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:08:24.378[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:08:24.413[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:08:26.081[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.J.updateByPrimaryKeySelective - ==>  Preparing: update joblevel SET name = ?, titleLevel = ?, createDate = ?, enabled = ? where id = ? 
+2020-04-23 14:08:26.311[http-nio-8080-exec-10][http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'titlelevel' in 'class com.niit.vhrend.model.JobLevel'] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'titlelevel' in 'class com.niit.vhrend.model.JobLevel'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:373)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:163)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy68.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy75.updateByPrimaryKeySelective(Unknown Source)
+	at com.niit.vhrend.service.system.basic.JobLevelService.updateJobLevelById(JobLevelService.java:28)
+	at com.niit.vhrend.controller.system.basic.JobLevelController.updateJobLevelById(JobLevelController.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-04-23 14:08:27.880[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:08:27.880[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:08:27.896[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:08:27.898[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.J.updateByPrimaryKeySelective - ==>  Preparing: update joblevel SET name = ?, titleLevel = ?, createDate = ?, enabled = ? where id = ? 
+2020-04-23 14:08:27.899[http-nio-8080-exec-1][http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'titlelevel' in 'class com.niit.vhrend.model.JobLevel'] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'titlelevel' in 'class com.niit.vhrend.model.JobLevel'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:373)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:163)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy68.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy75.updateByPrimaryKeySelective(Unknown Source)
+	at com.niit.vhrend.service.system.basic.JobLevelService.updateJobLevelById(JobLevelService.java:28)
+	at com.niit.vhrend.controller.system.basic.JobLevelController.updateJobLevelById(JobLevelController.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-04-23 14:08:29.079[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:08:29.092[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:08:29.095[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:08:29.097[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.J.updateByPrimaryKeySelective - ==>  Preparing: update joblevel SET name = ?, titleLevel = ?, createDate = ?, enabled = ? where id = ? 
+2020-04-23 14:08:29.098[http-nio-8080-exec-3][http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'titlelevel' in 'class com.niit.vhrend.model.JobLevel'] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'titlelevel' in 'class com.niit.vhrend.model.JobLevel'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:373)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:163)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy68.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy75.updateByPrimaryKeySelective(Unknown Source)
+	at com.niit.vhrend.service.system.basic.JobLevelService.updateJobLevelById(JobLevelService.java:28)
+	at com.niit.vhrend.controller.system.basic.JobLevelController.updateJobLevelById(JobLevelController.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-04-23 14:08:30.336[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:08:30.336[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:08:30.363[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:08:30.364[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.J.updateByPrimaryKeySelective - ==>  Preparing: update joblevel SET name = ?, titleLevel = ?, createDate = ?, enabled = ? where id = ? 
+2020-04-23 14:08:30.365[http-nio-8080-exec-4][http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'titlelevel' in 'class com.niit.vhrend.model.JobLevel'] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'titlelevel' in 'class com.niit.vhrend.model.JobLevel'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:373)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:163)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy68.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy75.updateByPrimaryKeySelective(Unknown Source)
+	at com.niit.vhrend.service.system.basic.JobLevelService.updateJobLevelById(JobLevelService.java:28)
+	at com.niit.vhrend.controller.system.basic.JobLevelController.updateJobLevelById(JobLevelController.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-04-23 14:08:46.775[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:08:46.775[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:08:47.125[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:08:47.129[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.J.updateByPrimaryKeySelective - ==>  Preparing: update joblevel SET name = ?, titleLevel = ?, createDate = ?, enabled = ? where id = ? 
+2020-04-23 14:08:47.131[http-nio-8080-exec-2][http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'titlelevel' in 'class com.niit.vhrend.model.JobLevel'] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'titlelevel' in 'class com.niit.vhrend.model.JobLevel'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:373)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:163)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy68.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy75.updateByPrimaryKeySelective(Unknown Source)
+	at com.niit.vhrend.service.system.basic.JobLevelService.updateJobLevelById(JobLevelService.java:28)
+	at com.niit.vhrend.controller.system.basic.JobLevelController.updateJobLevelById(JobLevelController.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-04-23 14:14:09.434[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:14:09.436[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:14:09.441[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:14:09.442[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.J.getAllJobLevels - ==>  Preparing: select * from joblevel; 
+2020-04-23 14:14:09.442[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.J.getAllJobLevels - ==> Parameters: 
+2020-04-23 14:14:09.444[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.J.getAllJobLevels - <==      Total: 8
+2020-04-23 14:16:56.379[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:16:56.379[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:16:56.552[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:16:56.553[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:16:56.553[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:16:56.935[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:16:56.958[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:16:56.958[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:16:56.961[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:16:56.962[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:16:56.962[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:16:56.967[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:16:57.354[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:16:57.355[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:16:57.373[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:16:57.374[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.P.selectAllPosition - ==>  Preparing: select * from position 
+2020-04-23 14:16:57.374[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.P.selectAllPosition - ==> Parameters: 
+2020-04-23 14:16:57.377[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.P.selectAllPosition - <==      Total: 7
+2020-04-23 14:17:57.147[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:17:57.147[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:17:57.151[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:17:57.152[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:17:57.152[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:17:57.158[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:17:57.379[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:17:57.380[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:17:57.383[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:17:57.384[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:17:57.384[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:17:57.444[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:17:57.644[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:17:57.644[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:17:57.647[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:17:57.648[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.P.selectAllPosition - ==>  Preparing: select * from position 
+2020-04-23 14:17:57.648[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.P.selectAllPosition - ==> Parameters: 
+2020-04-23 14:17:57.651[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.P.selectAllPosition - <==      Total: 7
+2020-04-23 14:18:59.503[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:18:59.503[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:18:59.649[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:18:59.658[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:18:59.658[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:18:59.665[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:18:59.818[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:18:59.819[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:18:59.826[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:18:59.826[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:18:59.827[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:18:59.849[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:19:00.109[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:19:00.109[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:19:00.132[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:19:00.133[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.P.selectAllPosition - ==>  Preparing: select * from position 
+2020-04-23 14:19:00.134[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.P.selectAllPosition - ==> Parameters: 
+2020-04-23 14:19:00.143[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.P.selectAllPosition - <==      Total: 7
+2020-04-23 14:20:00.846[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:20:00.846[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:20:00.873[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:20:00.874[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:20:00.874[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:20:00.880[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:20:00.915[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:20:00.915[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:20:00.934[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:20:00.937[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:20:00.938[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:20:00.958[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:20:01.338[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:20:01.338[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:20:01.348[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:20:01.349[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.P.selectAllPosition - ==>  Preparing: select * from position 
+2020-04-23 14:20:01.349[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.P.selectAllPosition - ==> Parameters: 
+2020-04-23 14:20:01.350[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.P.selectAllPosition - <==      Total: 7
+2020-04-23 14:20:42.280[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:20:42.280[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:20:42.287[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:20:42.290[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.J.getAllJobLevels - ==>  Preparing: select * from joblevel; 
+2020-04-23 14:20:42.290[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.J.getAllJobLevels - ==> Parameters: 
+2020-04-23 14:20:42.292[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.J.getAllJobLevels - <==      Total: 8
+2020-04-23 14:23:17.645[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:23:17.646[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:23:17.650[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:23:17.651[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.J.getAllJobLevels - ==>  Preparing: select * from joblevel; 
+2020-04-23 14:23:17.651[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.J.getAllJobLevels - ==> Parameters: 
+2020-04-23 14:23:17.652[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.J.getAllJobLevels - <==      Total: 8
+2020-04-23 14:24:13.136[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:24:13.136[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:24:13.139[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:24:13.141[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.J.updateByPrimaryKeySelective - ==>  Preparing: update joblevel SET name = ?, titleLevel = ?, createDate = ?, enabled = ? where id = ? 
+2020-04-23 14:24:13.142[http-nio-8080-exec-10][http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'titlelevel' in 'class com.niit.vhrend.model.JobLevel'] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'titlelevel' in 'class com.niit.vhrend.model.JobLevel'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:373)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:163)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy68.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:144)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy75.updateByPrimaryKeySelective(Unknown Source)
+	at com.niit.vhrend.service.system.basic.JobLevelService.updateJobLevelById(JobLevelService.java:28)
+	at com.niit.vhrend.controller.system.basic.JobLevelController.updateJobLevelById(JobLevelController.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-04-23 14:24:19.871[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:24:19.872[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:24:19.875[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:24:19.876[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:24:19.877[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:24:19.995[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:24:20.171[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:24:20.171[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:24:20.174[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:24:20.175[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:24:20.239[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:24:20.241[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:24:20.487[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:24:20.487[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:24:20.489[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:24:20.490[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:24:20.491[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:24:20.492[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.P.selectAllPosition - ==>  Preparing: select * from position 
+2020-04-23 14:24:20.492[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.P.selectAllPosition - ==> Parameters: 
+2020-04-23 14:24:20.493[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:24:20.493[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.P.selectAllPosition - <==      Total: 7
+2020-04-23 14:24:20.493[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.J.getAllJobLevels - ==>  Preparing: select * from joblevel; 
+2020-04-23 14:24:20.494[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.J.getAllJobLevels - ==> Parameters: 
+2020-04-23 14:24:20.494[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.J.getAllJobLevels - <==      Total: 8
+2020-04-23 14:25:06.614[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:25:06.614[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:25:06.633[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:25:06.634[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.J.getAllJobLevels - ==>  Preparing: select * from joblevel; 
+2020-04-23 14:25:06.635[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.J.getAllJobLevels - ==> Parameters: 
+2020-04-23 14:25:06.636[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.J.getAllJobLevels - <==      Total: 8
+2020-04-23 14:25:14.711[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:25:14.711[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:25:14.714[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:25:14.715[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:25:14.715[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:25:14.857[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:25:14.921[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:25:14.922[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:25:14.928[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:25:14.932[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:25:14.932[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:25:14.935[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:25:15.193[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:25:15.193[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:25:15.194[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:25:15.194[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:25:15.196[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:25:15.197[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.J.getAllJobLevels - ==>  Preparing: select * from joblevel; 
+2020-04-23 14:25:15.197[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.J.getAllJobLevels - ==> Parameters: 
+2020-04-23 14:25:15.242[http-nio-8080-exec-8][http-nio-8080-exec-8] DEBUG c.n.v.m.J.getAllJobLevels - <==      Total: 8
+2020-04-23 14:25:15.247[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:25:15.247[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.P.selectAllPosition - ==>  Preparing: select * from position 
+2020-04-23 14:25:15.248[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.P.selectAllPosition - ==> Parameters: 
+2020-04-23 14:25:15.265[http-nio-8080-exec-9][http-nio-8080-exec-9] DEBUG c.n.v.m.P.selectAllPosition - <==      Total: 7
+2020-04-23 14:25:30.518[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:25:30.519[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:25:30.547[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:25:30.547[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.J.getAllJobLevels - ==>  Preparing: select * from joblevel; 
+2020-04-23 14:25:30.548[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.J.getAllJobLevels - ==> Parameters: 
+2020-04-23 14:25:30.549[http-nio-8080-exec-10][http-nio-8080-exec-10] DEBUG c.n.v.m.J.getAllJobLevels - <==      Total: 8
+2020-04-23 14:25:46.847[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:25:46.847[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:25:46.852[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:25:46.854[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:25:46.855[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:25:46.887[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:25:46.941[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:25:46.942[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:25:46.946[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:25:46.946[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==>  Preparing: select distinct m1.*, m2.id as id2, m2.component as component2, m2.enabled as enabled2, m2.iconCls as iconCls2, m2.keepAlive as keepAlive2, m2.name as name2, m2.parentId as parentid2, m2.requireAuth as requireAuth2, m2.path as path2 from menu m1, menu m2, hr_role hrr, menu_role mr where m1.id=m2.parentId and hrr.hrid=? and hrr.rid=mr.rid and mr.mid=m2.id and m2.enabled=true order by m1.id, m2.id 
+2020-04-23 14:25:46.947[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - ==> Parameters: 3(Integer)
+2020-04-23 14:25:46.949[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.MenuMapper.getMenusByHrId - <==      Total: 21
+2020-04-23 14:25:47.220[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:25:47.220[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 14:25:47.220[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:25:47.221[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 14:25:47.365[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:25:47.366[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.P.selectAllPosition - ==>  Preparing: select * from position 
+2020-04-23 14:25:47.366[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.P.selectAllPosition - ==> Parameters: 
+2020-04-23 14:25:47.368[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.P.selectAllPosition - <==      Total: 7
+2020-04-23 14:25:47.427[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 14:25:47.428[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.J.getAllJobLevels - ==>  Preparing: select * from joblevel; 
+2020-04-23 14:25:47.429[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.J.getAllJobLevels - ==> Parameters: 
+2020-04-23 14:25:47.430[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.J.getAllJobLevels - <==      Total: 8
+2020-04-23 22:20:48.644[main][main] INFO  com.niit.vhrend.VhrEndApplication - Starting VhrEndApplication on DESKTOP-914F8O2 with PID 16228 (E:\前后端\后端\vhr-end\target\classes started by Lenovo in E:\前后端\后端\vhr-end)
+2020-04-23 22:20:48.671[main][main] INFO  com.niit.vhrend.VhrEndApplication - No active profile set, falling back to default profiles: default
+2020-04-23 22:20:51.274[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-23 22:20:52.447[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-04-23 22:20:52.455[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:20:52.455[main][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-23 22:20:52.455[main][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-23 22:20:52.456[main][main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-04-23 22:20:52.456[main][main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-23 22:20:52.456[main][main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-23 22:20:52.461[main][main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-04-23 22:20:52.520[main][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-23 22:20:52.521[main][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3810 ms
+2020-04-23 22:20:52.640[main][main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-23 22:20:53.975[main][main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-23 22:20:57.220[main][main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-23 22:20:57.310[main][main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 22:20:58.803[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Mvc [pattern='/login'], []
+2020-04-23 22:20:58.824[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e159116, org.springframework.security.web.context.SecurityContextPersistenceFilter@26865b57, org.springframework.security.web.header.HeaderWriterFilter@20a47036, org.springframework.security.web.authentication.logout.LogoutFilter@c82d925, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@28bd5015, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@596afb2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@727453a3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d1f23a0, org.springframework.security.web.session.SessionManagementFilter@43ab9ae9, org.springframework.security.web.access.ExceptionTranslationFilter@c67395, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@333a44f2]
+2020-04-23 22:20:58.877[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-04-23 22:20:58.896[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-04-23 22:20:58.936[main][main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-04-23 22:20:58.951[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:20:58.973[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-23 22:20:58.976[main][main] INFO  com.niit.vhrend.VhrEndApplication - Started VhrEndApplication in 10.667 seconds (JVM running for 12.737)
+2020-04-23 22:21:17.980[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 22:21:17.982[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-23 22:21:18.013[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 31 ms
+2020-04-23 22:21:25.164[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:21:25.257[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:21:26.184[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:21:26.825[http-nio-8080-exec-1][http-nio-8080-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [429] milliseconds.
+2020-04-23 22:21:30.916[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:21:30.916[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:21:31.016[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:21:32.133[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:21:32.133[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:21:32.162[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:21:38.545[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:21:38.546[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:21:38.569[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:22:52.276[main][main] INFO  com.niit.vhrend.VhrEndApplication - Starting VhrEndApplication on DESKTOP-914F8O2 with PID 25816 (E:\前后端\后端\vhr-end\target\classes started by Lenovo in E:\前后端\后端\vhr-end)
+2020-04-23 22:22:52.278[main][main] INFO  com.niit.vhrend.VhrEndApplication - No active profile set, falling back to default profiles: default
+2020-04-23 22:22:53.276[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-23 22:22:53.629[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-04-23 22:22:53.636[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:22:53.636[main][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-23 22:22:53.636[main][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-23 22:22:53.637[main][main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-04-23 22:22:53.638[main][main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-23 22:22:53.640[main][main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-23 22:22:53.643[main][main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-04-23 22:22:53.707[main][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-23 22:22:53.707[main][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1374 ms
+2020-04-23 22:22:53.810[main][main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-23 22:22:53.893[main][main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-23 22:22:54.429[main][main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-23 22:22:54.528[main][main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 22:22:54.758[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Mvc [pattern='/login'], []
+2020-04-23 22:22:54.779[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@377e573a, org.springframework.security.web.context.SecurityContextPersistenceFilter@250a946, org.springframework.security.web.header.HeaderWriterFilter@7f2ca6f8, org.springframework.security.web.authentication.logout.LogoutFilter@336e3be2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@33f349ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ffb0d10, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d47b06, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76db9048, org.springframework.security.web.session.SessionManagementFilter@13dc6649, org.springframework.security.web.access.ExceptionTranslationFilter@6141647f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52856ff9]
+2020-04-23 22:22:54.832[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-04-23 22:22:54.844[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-04-23 22:22:54.872[main][main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-04-23 22:22:54.886[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:22:54.909[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-23 22:22:54.913[main][main] INFO  com.niit.vhrend.VhrEndApplication - Started VhrEndApplication in 3.019 seconds (JVM running for 4.452)
+2020-04-23 22:22:57.178[http-nio-8080-exec-2][http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 22:22:57.178[http-nio-8080-exec-2][http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-23 22:22:57.184[http-nio-8080-exec-2][http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-04-23 22:22:57.647[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:22:57.667[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:22:57.946[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:22:58.413[http-nio-8080-exec-2][http-nio-8080-exec-2] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [452] milliseconds.
+2020-04-23 22:22:59.838[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:22:59.838[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:22:59.850[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:23:23.630[main][main] INFO  com.niit.vhrend.VhrEndApplication - Starting VhrEndApplication on DESKTOP-914F8O2 with PID 27000 (E:\前后端\后端\vhr-end\target\classes started by Lenovo in E:\前后端\后端\vhr-end)
+2020-04-23 22:23:23.637[main][main] INFO  com.niit.vhrend.VhrEndApplication - No active profile set, falling back to default profiles: default
+2020-04-23 22:23:24.590[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-23 22:23:25.027[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-04-23 22:23:25.041[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:23:25.042[main][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-23 22:23:25.042[main][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-23 22:23:25.043[main][main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-04-23 22:23:25.044[main][main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-23 22:23:25.044[main][main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-23 22:23:25.047[main][main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-04-23 22:23:25.122[main][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-23 22:23:25.122[main][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1414 ms
+2020-04-23 22:23:25.250[main][main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-23 22:23:25.341[main][main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-23 22:23:25.893[main][main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-23 22:23:25.964[main][main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 22:23:26.164[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Mvc [pattern='/login'], []
+2020-04-23 22:23:26.192[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@598778cc, org.springframework.security.web.context.SecurityContextPersistenceFilter@69d667a5, org.springframework.security.web.header.HeaderWriterFilter@182e4365, org.springframework.security.web.authentication.logout.LogoutFilter@6e7e0259, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@16e07bae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8f4b803, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@95cecc5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3386ed8, org.springframework.security.web.session.SessionManagementFilter@1e6d30c0, org.springframework.security.web.access.ExceptionTranslationFilter@152e7703, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6df2a206]
+2020-04-23 22:23:26.242[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-04-23 22:23:26.252[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-04-23 22:23:26.276[main][main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-04-23 22:23:26.291[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:23:26.312[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-23 22:23:26.315[main][main] INFO  com.niit.vhrend.VhrEndApplication - Started VhrEndApplication in 3.072 seconds (JVM running for 4.492)
+2020-04-23 22:23:29.451[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 22:23:29.453[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-23 22:23:29.458[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-04-23 22:23:29.889[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:23:29.909[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:23:30.080[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:23:30.493[http-nio-8080-exec-1][http-nio-8080-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [396] milliseconds.
+2020-04-23 22:23:32.563[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:23:32.564[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:23:32.576[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:23:33.299[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:23:33.299[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:23:33.309[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:23:33.906[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:23:33.906[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:23:33.911[http-nio-8080-exec-7][http-nio-8080-exec-7] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:24:08.189[main][main] INFO  com.niit.vhrend.VhrEndApplication - Starting VhrEndApplication on DESKTOP-914F8O2 with PID 21624 (E:\前后端\后端\vhr-end\target\classes started by Lenovo in E:\前后端\后端\vhr-end)
+2020-04-23 22:24:08.192[main][main] INFO  com.niit.vhrend.VhrEndApplication - No active profile set, falling back to default profiles: default
+2020-04-23 22:24:09.128[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-23 22:24:09.555[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-04-23 22:24:09.570[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:24:09.571[main][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-23 22:24:09.571[main][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-23 22:24:09.572[main][main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-04-23 22:24:09.572[main][main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-23 22:24:09.572[main][main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-23 22:24:09.575[main][main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-04-23 22:24:09.643[main][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-23 22:24:09.643[main][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1379 ms
+2020-04-23 22:24:09.745[main][main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-23 22:24:09.862[main][main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-23 22:24:10.426[main][main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-23 22:24:10.538[main][main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 22:24:10.713[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Mvc [pattern='/login'], []
+2020-04-23 22:24:10.729[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31e7afde, org.springframework.security.web.context.SecurityContextPersistenceFilter@63e70bf9, org.springframework.security.web.header.HeaderWriterFilter@4f3fec43, org.springframework.security.web.authentication.logout.LogoutFilter@38fb151a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@460f1cdb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@419f0ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c2883b1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@349f3ff7, org.springframework.security.web.session.SessionManagementFilter@10f20d38, org.springframework.security.web.access.ExceptionTranslationFilter@3982206a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d4d65f5]
+2020-04-23 22:24:10.774[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-04-23 22:24:10.784[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-04-23 22:24:10.808[main][main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-04-23 22:24:10.823[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:24:10.842[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-23 22:24:10.845[main][main] INFO  com.niit.vhrend.VhrEndApplication - Started VhrEndApplication in 3.044 seconds (JVM running for 4.399)
+2020-04-23 22:24:13.717[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 22:24:13.720[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-23 22:24:13.725[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-04-23 22:24:14.582[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:24:14.612[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:24:15.029[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:24:15.452[http-nio-8080-exec-1][http-nio-8080-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [407] milliseconds.
+2020-04-23 22:24:17.315[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:24:17.316[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:24:17.732[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:24:18.886[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:24:18.887[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:24:18.895[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:25:02.038[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:25:02.039[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:25:02.048[http-nio-8080-exec-5][http-nio-8080-exec-5] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:37:13.630[main][main] INFO  com.niit.vhrend.VhrEndApplication - Starting VhrEndApplication on DESKTOP-914F8O2 with PID 6344 (E:\前后端\后端\vhr-end\target\classes started by Lenovo in E:\前后端\后端\vhr-end)
+2020-04-23 22:37:13.642[main][main] INFO  com.niit.vhrend.VhrEndApplication - No active profile set, falling back to default profiles: default
+2020-04-23 22:37:14.740[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-23 22:37:15.110[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-04-23 22:37:15.119[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:37:15.119[main][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-23 22:37:15.119[main][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-23 22:37:15.120[main][main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-04-23 22:37:15.121[main][main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-23 22:37:15.121[main][main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-23 22:37:15.124[main][main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-04-23 22:37:15.192[main][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-23 22:37:15.192[main][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1398 ms
+2020-04-23 22:37:15.311[main][main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-23 22:37:15.394[main][main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-23 22:37:16.365[main][main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-23 22:37:16.449[main][main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 22:37:16.625[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Mvc [pattern='/login'], []
+2020-04-23 22:37:16.648[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47797401, org.springframework.security.web.context.SecurityContextPersistenceFilter@16df9bde, org.springframework.security.web.header.HeaderWriterFilter@6cc8c13c, org.springframework.security.web.authentication.logout.LogoutFilter@33f349ae, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1ad1be5d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5be7b749, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2da5fdc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@702f4124, org.springframework.security.web.session.SessionManagementFilter@b32e983, org.springframework.security.web.access.ExceptionTranslationFilter@652b3733, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12670e55]
+2020-04-23 22:37:16.694[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-04-23 22:37:16.706[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-04-23 22:37:16.730[main][main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-04-23 22:37:17.941[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:37:17.960[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-23 22:37:17.963[main][main] INFO  com.niit.vhrend.VhrEndApplication - Started VhrEndApplication in 4.747 seconds (JVM running for 6.071)
+2020-04-23 22:37:18.048[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 22:37:18.049[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-23 22:37:18.056[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-04-23 22:37:18.779[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:37:18.797[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:37:19.184[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:37:19.631[http-nio-8080-exec-1][http-nio-8080-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [414] milliseconds.
+2020-04-23 22:37:21.302[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:37:21.305[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:37:21.315[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:39:30.865[main][main] INFO  com.niit.vhrend.VhrEndApplication - Starting VhrEndApplication on DESKTOP-914F8O2 with PID 24116 (E:\前后端\后端\vhr-end\target\classes started by Lenovo in E:\前后端\后端\vhr-end)
+2020-04-23 22:39:30.872[main][main] INFO  com.niit.vhrend.VhrEndApplication - No active profile set, falling back to default profiles: default
+2020-04-23 22:39:31.841[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-23 22:39:32.223[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-04-23 22:39:32.230[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:39:32.231[main][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-23 22:39:32.231[main][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-23 22:39:32.232[main][main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-04-23 22:39:32.232[main][main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-23 22:39:32.232[main][main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-23 22:39:32.235[main][main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-04-23 22:39:32.299[main][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-23 22:39:32.299[main][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1352 ms
+2020-04-23 22:39:32.399[main][main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-23 22:39:32.473[main][main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-23 22:39:33.046[main][main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-23 22:39:33.116[main][main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 22:39:33.285[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Mvc [pattern='/login'], []
+2020-04-23 22:39:33.307[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22ff1372, org.springframework.security.web.context.SecurityContextPersistenceFilter@269308cc, org.springframework.security.web.header.HeaderWriterFilter@5be7b749, org.springframework.security.web.authentication.logout.LogoutFilter@123ca460, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15be68b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17d816b3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5aa7cfdf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@356341c9, org.springframework.security.web.session.SessionManagementFilter@2ec5cc14, org.springframework.security.web.access.ExceptionTranslationFilter@16df9bde, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@47797401]
+2020-04-23 22:39:33.356[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-04-23 22:39:33.365[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-04-23 22:39:33.391[main][main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-04-23 22:39:33.402[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:39:33.424[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-23 22:39:33.427[main][main] INFO  com.niit.vhrend.VhrEndApplication - Started VhrEndApplication in 2.894 seconds (JVM running for 4.159)
+2020-04-23 22:39:40.651[http-nio-8080-exec-3][http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 22:39:40.652[http-nio-8080-exec-3][http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-23 22:39:40.660[http-nio-8080-exec-3][http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-04-23 22:39:41.157[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:39:41.177[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:39:41.393[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:39:41.816[http-nio-8080-exec-3][http-nio-8080-exec-3] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [407] milliseconds.
+2020-04-23 22:39:43.112[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:39:43.112[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:39:43.120[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:54:39.336[main][main] INFO  com.niit.vhrend.VhrEndApplication - Starting VhrEndApplication on DESKTOP-914F8O2 with PID 20140 (E:\前后端\后端\vhr-end\target\classes started by Lenovo in E:\前后端\后端\vhr-end)
+2020-04-23 22:54:39.354[main][main] INFO  com.niit.vhrend.VhrEndApplication - No active profile set, falling back to default profiles: default
+2020-04-23 22:54:40.397[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-23 22:54:40.828[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-04-23 22:54:40.838[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:54:40.839[main][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-23 22:54:40.839[main][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-23 22:54:40.840[main][main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-04-23 22:54:40.840[main][main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-23 22:54:40.840[main][main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-23 22:54:40.844[main][main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-04-23 22:54:40.911[main][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-23 22:54:40.911[main][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1501 ms
+2020-04-23 22:54:41.040[main][main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-23 22:54:41.141[main][main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-23 22:54:41.745[main][main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-23 22:54:41.826[main][main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 22:54:42.091[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Mvc [pattern='/login'], []
+2020-04-23 22:54:42.112[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ad1b737, org.springframework.security.web.context.SecurityContextPersistenceFilter@123ca460, org.springframework.security.web.header.HeaderWriterFilter@76db9048, org.springframework.security.web.authentication.logout.LogoutFilter@2520aa05, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7f4f1536, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d626f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e606f64, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@342a1f84, org.springframework.security.web.session.SessionManagementFilter@7d4d65f5, org.springframework.security.web.access.ExceptionTranslationFilter@33f349ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6dc2279c]
+2020-04-23 22:54:42.164[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-04-23 22:54:42.183[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-04-23 22:54:42.225[main][main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-04-23 22:54:42.552[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:54:42.574[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-23 22:54:42.577[main][main] INFO  com.niit.vhrend.VhrEndApplication - Started VhrEndApplication in 3.58 seconds (JVM running for 4.675)
+2020-04-23 22:54:46.231[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 22:54:46.232[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-23 22:54:46.239[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-04-23 22:54:47.887[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:54:47.942[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:54:48.392[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:54:48.921[http-nio-8080-exec-1][http-nio-8080-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [399] milliseconds.
+2020-04-23 22:54:54.247[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:54:54.247[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:54:54.258[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:54:57.519[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:54:57.520[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:54:57.530[http-nio-8080-exec-4][http-nio-8080-exec-4] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:55:37.730[main][main] INFO  com.niit.vhrend.VhrEndApplication - Starting VhrEndApplication on DESKTOP-914F8O2 with PID 10432 (E:\前后端\后端\vhr-end\target\classes started by Lenovo in E:\前后端\后端\vhr-end)
+2020-04-23 22:55:37.733[main][main] INFO  com.niit.vhrend.VhrEndApplication - No active profile set, falling back to default profiles: default
+2020-04-23 22:55:38.732[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-23 22:55:39.110[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-04-23 22:55:39.119[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:55:39.121[main][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-23 22:55:39.123[main][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-23 22:55:39.125[main][main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-04-23 22:55:39.125[main][main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-04-23 22:55:39.125[main][main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-04-23 22:55:39.128[main][main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-04-23 22:55:39.193[main][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-23 22:55:39.193[main][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1395 ms
+2020-04-23 22:55:39.308[main][main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-23 22:55:39.411[main][main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-23 22:55:39.975[main][main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-23 22:55:40.057[main][main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 22:55:40.231[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Mvc [pattern='/login'], []
+2020-04-23 22:55:40.249[main][main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a1ddbf1, org.springframework.security.web.context.SecurityContextPersistenceFilter@22e813fc, org.springframework.security.web.header.HeaderWriterFilter@2d47b06, org.springframework.security.web.authentication.logout.LogoutFilter@69d667a5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3cdfbbef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@87aec6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@fd4459b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e606f64, org.springframework.security.web.session.SessionManagementFilter@48106381, org.springframework.security.web.access.ExceptionTranslationFilter@402a69f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@349f3ff7]
+2020-04-23 22:55:40.296[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-04-23 22:55:40.309[main][main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-04-23 22:55:40.341[main][main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-04-23 22:55:40.439[main][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-04-23 22:55:40.466[main][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-23 22:55:40.470[main][main] INFO  com.niit.vhrend.VhrEndApplication - Started VhrEndApplication in 3.22 seconds (JVM running for 4.751)
+2020-04-23 22:55:40.529[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 22:55:40.530[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-23 22:55:40.535[http-nio-8080-exec-1][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2020-04-23 22:55:42.335[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:55:42.352[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:55:42.734[http-nio-8080-exec-1][http-nio-8080-exec-1] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:55:43.160[http-nio-8080-exec-1][http-nio-8080-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [411] milliseconds.
+2020-04-23 22:55:47.863[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:55:47.863[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:55:47.872[http-nio-8080-exec-2][http-nio-8080-exec-2] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:55:48.717[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:55:48.718[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:55:48.724[http-nio-8080-exec-3][http-nio-8080-exec-3] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
+2020-04-23 22:55:52.116[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==>  Preparing: select m.*, r.id as rid, r.name as rname, r.nameZh as rnameZh from menu m, menu_role mr, role r where m.id=mr.mid and mr.rid=r.id order by m.id 
+2020-04-23 22:55:52.116[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - ==> Parameters: 
+2020-04-23 22:55:52.123[http-nio-8080-exec-6][http-nio-8080-exec-6] DEBUG c.n.v.m.M.getAllMenusWithRole - <==      Total: 56
